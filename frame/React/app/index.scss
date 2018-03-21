@@ -1,0 +1,22 @@
+
+.index-page{
+    >div{
+        padding: 0.5em 1em;
+        &:hover{
+            background: #d3d3d3;
+        }
+    }
+    img{
+        height:45px;
+    }
+    .active{
+        background: #369963;
+    }
+    .tab-full{
+        height: calc(100% - 100px);
+        text-align: center;
+        font-size: 30px;
+        padding-top: 60px;
+        border: 1px solid #666666;
+    }
+}

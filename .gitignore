@@ -1,0 +1,12 @@
+logs
+*.log
+.grunt
+node_modules
+bower_components
+build
+
+.idea/
+.vscode/
+
+start.sh
+node_modules/
