@@ -1,0 +1,14 @@
+.component-gridview{
+    outline: 1px solid #666666;
+    .component-gridview-content{
+        background: #f3f3f3;
+        padding: 2px 5px;
+        &:nth-child(even){
+            background: #d3d3d3;
+        }
+        >*{
+            display: inline-block;
+            min-width: 60px;
+        }
+    }
+}

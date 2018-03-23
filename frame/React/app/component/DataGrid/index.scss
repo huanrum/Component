@@ -1,0 +1,22 @@
+.component-datagrid{
+    border: 1px solid #666666;
+    .component-datagrid-header{
+        background: cadetblue;
+    }
+    .component-datagrid-content{
+        background: #f3f3f3;
+        &:nth-child(even){
+            background: #d3d3d3;
+        }
+    }
+    .component-datagrid-header,.component-datagrid-content{
+        border-bottom: 1px solid #666666;
+        >*{
+            display: inline-block;
+            min-width: 60px;
+            border-left: 1px solid #666666;
+            padding: 2px 5px;
+        }
+    }
+    
+}

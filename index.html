@@ -50,7 +50,7 @@
         '<iframe [src] = "src()"></iframe>'
       ].join(''), {}, function (scope) {
         scope.fontSize = '16px';
-        scope.items = ['Ng4', 'Vue', 'React'];
+        scope.items = ['Ng4', 'React', 'Vue'];
         scope.active = scope.active || localValue('tab') || scope.items[0];
         scope.src = function () {
           return location.href.replace('index.html','frame/' + scope.active + '/index.html');

@@ -1,0 +1,17 @@
+.component-color{
+    >button{
+        border: 1px solid #339aef;
+        padding: 5px;
+        border-radius: 5px;
+        color: #ffffff;
+    }
+    .component-color-content{
+        display: inline-block;
+        height: 25px;
+        width: 70px;
+        margin: 1px;
+        &.selected{
+            text-decoration:line-through;
+        }
+    }
+}

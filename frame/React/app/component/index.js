@@ -1,28 +1,27 @@
-import './_component.scss';
 
-import Button from './Button';
-import Input from './Input';
-import Textbox from './Textbox';
-import Checkbox from './Checkbox';
-import Label from './Label';
-import Image from './Image';
-import Panel from './Panel';
-import Select from './Select';
-import Radio from './Radio';
-import Slide from './Slide';
-import Progress from './Progress';
-import List from './List';
-import ListView from './ListView';
-import Menu from './Menu';
-import Tab from './Tab';
-import Tree from './Tree';
-import DataGrid from './DataGrid';
-import GridView from './GridView';
-import Dialog from './Dialog';
-import Color from './Color';
-import Calendar from './Calendar';
-import Toolbar from './Toolbar';
+import ButtonControl from './Button';
+import InputControl from './Input';
+import TextboxControl from './Textbox';
+import CheckboxControl from './Checkbox';
+import LabelControl from './Label';
+import ImageControl from './Image';
+import PanelControl from './Panel';
+import SelectControl from './Select';
+import RadioControl from './Radio';
+import SlideControl from './Slide';
+import ProgressControl from './Progress';
+import ListControl from './List';
+import ListViewControl from './ListView';
+import MenuControl from './Menu';
+import TabControl from './Tab';
+import TreeControl from './Tree';
+import DataGridControl from './DataGrid';
+import GridViewControl from './GridView';
+import DialogControl from './Dialog';
+import ColorControl from './Color';
+import CalendarControl from './Calendar';
+import ToolbarControl from './Toolbar';
 
 export default {
-    Button,Input,Checkbox,Label,Image,Panel,Textbox,Select,Radio,Slide,Progress,List,ListView,Menu,Tab,Tree,DataGrid,GridView,Dialog,Color,Calendar,Toolbar
+    ButtonControl,InputControl,CheckboxControl,LabelControl,ImageControl,PanelControl,TextboxControl,SelectControl,RadioControl,SlideControl,ProgressControl,ListControl,ListViewControl,MenuControl,TabControl,TreeControl,DataGridControl,GridViewControl,DialogControl,ColorControl,CalendarControl,ToolbarControl
 };

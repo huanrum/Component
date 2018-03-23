@@ -1,0 +1,10 @@
+.component-listview{
+    >div{
+        border-bottom: 1px solid #acacac;
+        >*{
+            display: inline-block;
+            min-width: 60px;
+            padding: 2px;
+        }
+    }
+}

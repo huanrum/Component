@@ -16,22 +16,29 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import component from './component';
+//import component from './component';
+import ButtonControl from './component/Button';
 
-
+let component = {};
 // 为 AppComponent 组件类添加注解
 @Component({
   selector: 'app',
-  template: `<div>
-                <Button>Button</Button>
-                
-            </div>`
+  template: [
+            '<div>',
+            '   <ButtonControl>Test</ButtonControl>',
+                Object.keys(component).map(cm => {
+                    return '<div><componentName>componentName</componentName></div>'.replace(/componentName/g, cm);
+                }).join(''),
+            '</div>'
+            ].join('')
 })
 class AppComponent {}
 
+console.log(component);
+
 @NgModule({
     imports: [ CommonModule,FormsModule,BrowserModule],
-    declarations: [ AppComponent,... ],
+    declarations: [ AppComponent,ButtonControl,...Object.values(component)],
     providers: [
         { provide: APP_BASE_HREF, useValue : '/' },
         { provide: LocationStrategy, useClass: HashLocationStrategy }

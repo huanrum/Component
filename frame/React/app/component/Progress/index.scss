@@ -1,0 +1,14 @@
+
+.component-progress{
+    position: relative;
+    height: 25px;
+    border: 1px solid #666666;
+    .progress{
+        position: absolute;
+        top:0;
+        width:5px;
+        height:100%; 
+        border: 1px solid #000000;
+        background: #333333;
+    }
+}

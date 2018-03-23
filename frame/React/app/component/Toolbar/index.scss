@@ -1,0 +1,14 @@
+
+
+.component-toolbar{
+    position: relative;
+    .component-toolbar-title{
+        position: absolute;
+        top:-100%;
+        border: 1px solid #339aef;
+        background: #d3d3d3;
+        padding: 5px;
+        border-radius: 5px;
+        color: #ffffff;
+    }
+}

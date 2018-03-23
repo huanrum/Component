@@ -1,0 +1,8 @@
+
+.component-tree{
+    .component-tree-item{
+        >*>*{
+            display: inline-block;
+        }
+    }
+}
