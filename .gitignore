@@ -10,3 +10,5 @@ build
 
 start.sh
 node_modules/
+Angular4/
+frame/*/bundle.js

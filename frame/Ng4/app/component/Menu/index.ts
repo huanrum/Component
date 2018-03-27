@@ -4,7 +4,7 @@ import { Component, OnChanges, SimpleChange, Input, ChangeDetectionStrategy } fr
 // 为 LoginComponent 组件类添加注解
 @Component({
     selector: 'MenuControl',
-    templateUrl:  './index.html'
+    templateUrl : 'app/component/Menu/index.html'
       
 })
 export default class {

@@ -4,7 +4,7 @@ import { Component, OnChanges, SimpleChange, Input, ChangeDetectionStrategy } fr
 // 为 LoginComponent 组件类添加注解
 @Component({
     selector: 'DataGridControl',
-    templateUrl:  './index.html'
+    templateUrl : 'app/component/DataGrid/index.html'
       
 })
 export default class {

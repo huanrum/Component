@@ -4,7 +4,7 @@ import { Component, OnChanges, SimpleChange, Input, ChangeDetectionStrategy } fr
 // 为 LoginComponent 组件类添加注解
 @Component({
     selector: 'CheckboxControl',
-    templateUrl:  './index.html'
+    templateUrl : 'app/component/Checkbox/index.html'
       
 })
 export default class {

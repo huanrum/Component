@@ -9,23 +9,19 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import {APP_BASE_HREF,LocationStrategy, HashLocationStrategy} from '@angular/common';  
 
 // 引入NgModule装饰器,引入浏览器模块
-import { Component } from '@angular/core';
-import { NgModule } from '@angular/core';
+import { Component, NgModule, PACKAGE_ROOT_URL} from '@angular/core';
  
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-//import component from './component';
-import ButtonControl from './component/Button';
+import component from './component';
 
-let component = {};
 // 为 AppComponent 组件类添加注解
 @Component({
   selector: 'app',
   template: [
             '<div>',
-            '   <ButtonControl>Test</ButtonControl>',
                 Object.keys(component).map(cm => {
                     return '<div><componentName>componentName</componentName></div>'.replace(/componentName/g, cm);
                 }).join(''),
@@ -38,9 +34,10 @@ console.log(component);
 
 @NgModule({
     imports: [ CommonModule,FormsModule,BrowserModule],
-    declarations: [ AppComponent,ButtonControl,...Object.values(component)],
+    declarations: [ AppComponent,...Object.values(component)],
     providers: [
         { provide: APP_BASE_HREF, useValue : '/' },
+        //{ provide: PACKAGE_ROOT_URL, useValue : 'app/component/' },
         { provide: LocationStrategy, useClass: HashLocationStrategy }
     ],
     bootstrap: [ AppComponent ]
