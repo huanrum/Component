@@ -1,3 +1,3 @@
-<button>
+<textarea [ngModel]="value" (ngModelChange)="change.emit($event)">
     <ng-content></ng-content>
-</button>
+</textarea>

@@ -1,5 +1,5 @@
 import './index.scss';
-import { Component, OnChanges, SimpleChange, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnChanges, SimpleChange, Input, Output, EventEmitter } from '@angular/core';
 
 // 为 LoginComponent 组件类添加注解
 @Component({
@@ -8,9 +8,11 @@ import { Component, OnChanges, SimpleChange, Input, ChangeDetectionStrategy } fr
       
 })
 export default class {
-    constructor() {
-        this.ContentText = 'ContentText';
-    }
     @Input()
-    ContentText: String
+    @Output()
+    value: String = 'ContentText'
+
+    //声明事件发射器
+    @Output() 
+    change = new EventEmitter<string>();
 }

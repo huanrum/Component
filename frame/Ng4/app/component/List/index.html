@@ -1,3 +1,5 @@
-<button>
-    <ng-content></ng-content>
-</button>
+<ul class="component-list">
+    <li *ngFor="let item of items" [ngClass]="{'active':item===value}" (click)="change.emit(item)">
+        <div>{{item.name || item}}</div>
+    </li>
+</ul>

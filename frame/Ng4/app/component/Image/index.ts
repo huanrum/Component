@@ -8,9 +8,6 @@ import { Component, OnChanges, SimpleChange, Input, ChangeDetectionStrategy } fr
       
 })
 export default class {
-    constructor() {
-        this.ContentText = 'ContentText';
-    }
     @Input()
-    ContentText: String
+    value: String
 }

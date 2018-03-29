@@ -1,4 +1,4 @@
-
+import Entity from './Entity';
 
 import ButtonControl from './Button';
 import InputControl from './Input';
@@ -23,6 +23,6 @@ import ColorControl from './Color';
 import CalendarControl from './Calendar';
 import ToolbarControl from './Toolbar';
 
-export default {
+export default Object.assign(Object.create({Entity}),{
     ButtonControl,InputControl,CheckboxControl,LabelControl,ImageControl,PanelControl,TextboxControl,SelectControl,RadioControl,SlideControl,ProgressControl,ListControl,ListViewControl,MenuControl,TabControl,TreeControl,DataGridControl,GridViewControl,DialogControl,ColorControl,CalendarControl,ToolbarControl
-};
+});
