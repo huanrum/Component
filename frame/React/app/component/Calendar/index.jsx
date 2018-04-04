@@ -35,7 +35,7 @@ export default class extends React.Component {
                                 <div className="header">Color<a onClick={()=>this.update('show',false)}>&times;</a></div>
                                 <div className="content">
                                     <div>Please select one calendar!</div>
-                                    <div className="show-calendar-year">
+                                    <div className="component-calendar-year">
                                         <span onClick={()=>this.update('show','year')}>{this.state.year}</span>
                                         {this.state.show==='year'?(<div>
                                             {

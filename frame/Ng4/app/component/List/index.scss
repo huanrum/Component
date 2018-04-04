@@ -2,7 +2,8 @@
     li{
         margin: 5px 0;
         &.active{
-            background: #00aeef;
+            color: #00aeef;
+            font-weight: bold;
         }
     }
 }

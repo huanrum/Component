@@ -39,7 +39,7 @@ import Service from './service';
                 <div><SlideControl>Slide</SlideControl></div>
                 <div><ProgressControl>Progress</ProgressControl></div>
                 <div><ListControl [items]="option.List" [value]="entity.List" (change)="handleEvent('List',$event)">List</ListControl></div>
-                <div><ListViewControl>ListView</ListViewControl></div>
+                <div><ListViewControl [items]="option.ListView" [value]="entity.ListView" (change)="handleEvent('ListView',$event)">ListView</ListViewControl></div>
                 <div><MenuControl>Menu</MenuControl></div>
                 <div><TreeControl>Tree</TreeControl></div>
                 <div><TabControl>Tab</TabControl></div>
@@ -68,6 +68,7 @@ class AppComponent {
 
         this.service.List.get().subscribe(req=>{
             this.option.List = req.json().data.list;
+            this.option.ListView = req.json().data.list;
             console.log(this.option.List);
         })
     }

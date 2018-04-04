@@ -10,9 +10,21 @@ new Vue({
         template: [
             '<div>',
                 Object.keys(component).map(cm => {
-                    return '<div><componentName>componentName</componentName></div>'.replace(/componentName/g, cm);
+                    return '<div><componentName v-model="entity.componentName" @change="change(\'componentName\',arguments[0])">componentName</componentName></div>'.replace(/componentName/g, cm);
                 }).join(''),
             '</div>'
-        ].join('')
+        ].join(''),
+        data(){
+            var entity = {};
+            Object.keys(component).forEach(i=>entity[i]=i);
+            return {
+                entity:entity
+            };
+        },
+        methods:{
+            change(field,value){
+                console.log(field,value);
+            }
+        }
     })
 }).$mount('#app');

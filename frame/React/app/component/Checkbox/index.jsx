@@ -2,7 +2,9 @@ import './index.scss';
 import React from 'react';
 
 export default class extends React.Component {
-
+    getInitialState() {
+        return {value: 'Hello Runoob!'};
+    }
     render(){
         var id = Date.now();
         return (
